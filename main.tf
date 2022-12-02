@@ -26,7 +26,7 @@ resource "aws_ec2_transit_gateway" "tgw" {
 module "central_vpcs" {
   for_each = var.central_vpcs
 
-  source = "https://github.com/nextinstall/terraform-aws-vpc"
+  source = "git::https://github.com/nextinstall/terraform-aws-vpc"
   #source  = "aws-ia/vpc/aws"
   version = "= 3.0.1"
 
